@@ -26,7 +26,7 @@ public class PortalErrorHandler {
         MethodArgumentTypeMismatchException.class
     })
     public ResponseEntity<Map<String, Object>> invalid(Exception exception) {
-        return error(HttpStatus.BAD_REQUEST, "VALIDATION_ERROR", "Проверьте введённые данные");
+        return error(HttpStatus.BAD_REQUEST, "VALIDATION_ERROR", "Проверьте введённые данные пожалуйста");
     }
 
     @ExceptionHandler(Exception.class)
